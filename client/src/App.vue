@@ -77,10 +77,10 @@
 export default {
   name: 'App'
 };
-</script>
-<style>
+</script >
+<style scoped>
 
-#app {
+root {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -99,7 +99,9 @@ export default {
 #nav a.router-link-exact-active {
   color: #42b983;
 }
-
+.bg-custom {
+  background-color: #8fbc8f;
+}
 .table-striped>tbody>tr:nth-child(odd)>td,
 .table-striped>tbody>tr:nth-child(odd)>th {
     background-color: lavender;
@@ -143,4 +145,4 @@ export default {
   transform: translateX(10px);
   opacity: 0;
 }
-</style>
+</stylescoped>

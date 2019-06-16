@@ -4,11 +4,11 @@
       <!--
             Incoming Token
       -->
-      <div class="table-responsive col-md-6">
+      <div class="table-responsive col-md-6 bg-custom">
         <h2 class="text-info">
           Incoming Tokens
         </h2>
-        <table class="table table-hover table-striped">
+        <table class="table table-hover table-striped text-info">
           <thead>
             <tr>
               <th>Status</th>
@@ -24,7 +24,7 @@
               :key="token._id"
             >
               <template
-                v-if="token && token.status != 'archived' && $store.getters.user == token.recipient"
+                v-if="token && token.status !== 'archived' && $store.getters.user === token.recipient"
               >
                 <td>{{ token.status }}</td>
                 <td>{{ token.creator }}</td>
@@ -47,7 +47,7 @@
         <h2 class="text-success">
           Outgoing Tokens
         </h2>
-        <table class="table table-hover table-striped">
+        <table class="table table-hover table-striped text-success">
           <thead>
             <tr>
               <th>Status</th>

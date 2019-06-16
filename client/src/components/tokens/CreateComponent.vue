@@ -5,8 +5,9 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <label>Recipient: &nbsp;&nbsp;</label>
+            <label for="recipient">Recipient: &nbsp;&nbsp;</label>
             <select
+              id="recipient"
               v-model="token.recipient"
             >
               <input
@@ -26,8 +27,9 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <label>Activity: &nbsp;&nbsp;</label>
+            <label for="action">Activity: </label>
             <select
+              id="action"
               v-model="action"
             >
               <input
@@ -47,8 +49,9 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <label>Subject: &nbsp;&nbsp;</label>
+            <label for="subject">Subject: &nbsp;&nbsp;</label>
             <select
+              id="subject"
               v-model="token.subject"
             >
               <input
@@ -68,12 +71,14 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <label>Request:</label>
+            <label for="request">Request:</label>
             <textarea
+              id="request"
               v-model="token.request"
               class="form-control"
               rows="5"
-            />
+            >
+            </textarea>
           </div>
         </div>
       </div>

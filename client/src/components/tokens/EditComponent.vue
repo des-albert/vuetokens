@@ -24,8 +24,9 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <label>Subject:</label>
+            <label for="subject">Subject:</label>
             <input
+              id="subject"
               v-model="token.subject"
               class="form-control"
               type="text"
@@ -36,8 +37,9 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <label>Request:</label>
+            <label for="request">Request:</label>
             <textarea
+              id="request"
               v-model="token.request"
               class="form-control"
               rows="5"
@@ -50,8 +52,9 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <label>Reply:</label>
+            <label for="reply">Reply:</label>
             <textarea
+              id="reply"
               v-model="token.reply"
               class="form-control"
               rows="5"
