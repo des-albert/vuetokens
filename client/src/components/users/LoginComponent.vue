@@ -43,6 +43,9 @@ export default {
   },
   created() {
     let uri = '/users';
+    if (process.env.NODE_ENV !== 'production') {
+      uri = 'http://localhost:4000/users';
+    }
     this.axios.get(uri).then(response => {
       this.users = response.data;
     });
