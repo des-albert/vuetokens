@@ -8,7 +8,7 @@ import CreateComponent from '@/components/tokens/CreateComponent';
 import IndexComponent from '@/components/tokens/IndexComponent.vue';
 import EditComponent from '@/components/tokens/EditComponent.vue';
 import LoginComponent from '@/components/users/LoginComponent.vue';
-import About from '@/views/About.vue';
+import AboutComponent from '@/views/About.vue';
 
 Vue.use(Router);
 Vue.use(VueAxios, axios);
@@ -23,10 +23,6 @@ export default new Router({
     { name: 'create', path: '/tokens/create', component: CreateComponent },
     { name: 'edit', path: '/tokens/:id', component: EditComponent },
     { name: 'login', path: '/login', component: LoginComponent },
-    {
-      name: 'about', path: '/about', component: () => {
-        return About;
-      }
-    }
+    { name: 'about', path: '/about', component:  AboutComponent }     
   ]
 });

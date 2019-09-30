@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
       <button
         class="navbar-toggler"
         type="button"
@@ -10,7 +10,8 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon" />
+        <span class="navbar-toggler-icon">
+        </span>
       </button>
       <div
         id="navbarColor01"
@@ -38,7 +39,7 @@
               to="/about"
               class="nav-link"
             >
-              Help
+              About
             </router-link>
           </li>
         </ul>
@@ -69,7 +70,8 @@
     <transition
       name="bounce"
     >
-      <router-view />
+      <router-view> 
+      </router-view>/>
     </transition>
   </div>
 </template>
@@ -100,7 +102,7 @@ root {
   color: #42b983;
 }
 .bg-custom {
-  background-color: #8fbc8f;
+  background-color: #2d738f;
 }
 .table-striped>tbody>tr:nth-child(odd)>td,
 .table-striped>tbody>tr:nth-child(odd)>th {
@@ -145,4 +147,4 @@ root {
   transform: translateX(10px);
   opacity: 0;
 }
-</style scoped>
+</style>
