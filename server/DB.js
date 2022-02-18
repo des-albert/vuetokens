@@ -1,3 +1,3 @@
 module.exports = {
-  DB: 'mongodb://token:Intell1gence@ds054288.mlab.com:54288/tokens'
+  DB: 'mongodb+srv://admin:Snagglet00th@vuecluster-l8ka0.mongodb.net/tokens?retryWrites=true&w=majority'
 };

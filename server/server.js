@@ -10,11 +10,14 @@ const userRoute = require('./routes/user.route');
 const subjectRoute = require('./routes/subject.route');
 
 const app = express();
-const router = express.Router();
+
 mongoose.Promise = global.Promise;
-mongoose.connect(config.DB, {useNewUrlParser: true}).then(
+mongoose.connect(config.DB,
+   {useNewUrlParser: true,
+    useUnifiedTopology: true
+  }).then(
   () => { console.log('MongoDB database connection established successfully'); },
-  err =>  console.log('cannot connect to MongoDB database')
+  err =>  console.log('cannot connect to MongoDB database ' + err)
 );
 
 app.use(cors());

@@ -94,6 +94,9 @@ export default {
   },
   created() {
     let uri = '/tokens';
+    if (process.env.NODE_ENV !== 'production') {
+      uri = 'http://localhost:4000/tokens';
+    }
     this.axios.get(uri).then(response => {
       this.tokens = response.data;
     });

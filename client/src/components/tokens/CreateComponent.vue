@@ -113,10 +113,16 @@ export default {
   },
   created() {
     let uri = '/users';
+    if (process.env.NODE_ENV !== 'production') {
+      uri = 'http://localhost:4000/users';
+    }
     this.axios.get(uri).then(response => {
       this.users = response.data;
     });
     let urs = '/subjects';
+    if (process.env.NODE_ENV !== 'production') {
+      urs = 'http://localhost:4000/subjects';
+    }
     this.axios.get(urs).then(response => {
       this.subjects = response.data;
     });
@@ -127,6 +133,9 @@ export default {
       if (this.$store.getters.user) {
         this.token.creator = this.$store.getters.user;
         let uri = '/tokens/add';
+        if (process.env.NODE_ENV !== 'production') {
+          uri = 'http://localhost:4000/tokens/add';
+        }
         this.axios.post(uri, this.token).then(() => {
           this.$router.push({ name: 'index' });
         });

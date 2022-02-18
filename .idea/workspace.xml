@@ -3,21 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a40e7351-fdcf-47bd-aa67-6b4e19a836c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/css/app.6cf60a88.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/css/chunk-vendors.60be501d.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/css/chunk-vendors.6ac2da57.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/js/app.5a3d8f5e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/js/app.5a3d8f5e.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/js/app.65f2877d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/js/app.65f2877d.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/js/chunk-vendors.8f06c13f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/js/chunk-vendors.8f06c13f.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/tokens/CreateComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/tokens/CreateComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/tokens/EditComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/tokens/EditComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/tokens/IndexComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/tokens/IndexComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,15 +18,28 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1ROQIlwYKQCJX161qJWCBYCsYWM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.14.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,7 +49,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -54,22 +60,22 @@
       <recent name="D:\Data\JavaScript\vuetokens" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="server.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="server/server.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -142,6 +148,26 @@
       <workItem from="1569626534784" duration="944000" />
       <workItem from="1569802347373" duration="8000" />
       <workItem from="1569813411569" duration="1671000" />
+      <workItem from="1569865335751" duration="8000" />
+      <workItem from="1570078876769" duration="216000" />
+      <workItem from="1570235313197" duration="5006000" />
+      <workItem from="1570248414192" duration="44000" />
+      <workItem from="1570249763919" duration="4737000" />
+      <workItem from="1570286018129" duration="3990000" />
+      <workItem from="1570320074550" duration="7669000" />
+      <workItem from="1570371667093" duration="3522000" />
+      <workItem from="1570396942615" duration="5823000" />
+      <workItem from="1570416446575" duration="6427000" />
+      <workItem from="1570484009717" duration="611000" />
+      <workItem from="1577290481273" duration="6211000" />
+      <workItem from="1577377784629" duration="73000" />
+      <workItem from="1577380244975" duration="1368000" />
+      <workItem from="1577487867512" duration="2465000" />
+      <workItem from="1577577413486" duration="2400000" />
+      <workItem from="1577588137137" duration="21000" />
+      <workItem from="1578237619645" duration="595000" />
+      <workItem from="1595354521540" duration="9000" />
+      <workItem from="1595354548259" duration="26000" />
     </task>
     <servers />
   </component>
@@ -165,5 +191,11 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/client" />
     </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2660" y="333" key="FileChooserDialogImpl" timestamp="1577578707396">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="333" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1577578707396" />
   </component>
 </project>

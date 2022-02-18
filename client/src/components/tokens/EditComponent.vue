@@ -130,6 +130,9 @@ export default {
   },
   created() {
     let uri = `/tokens/edit/${this.$route.params.id}`;
+    if (process.env.NODE_ENV !== 'production') {
+      uri = `http://localhost:4000/tokens/edit/${this.$route.params.id}`;
+    }
     this.axios.get(uri).then(response => {
       this.token = response.data;
     });
@@ -137,6 +140,9 @@ export default {
   methods: {
     updateToken() {
       let uri = `/tokens/update/${this.$route.params.id}`;
+      if (process.env.NODE_ENV !== 'production') {
+        uri = `http://localhost:4000/tokens/update/${this.$route.params.id}`;
+      }
       this.axios.post(uri, this.token).then(() => {
         this.$router.push({name: 'index'});
       });
